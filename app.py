@@ -5,6 +5,5 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return render_template('homepage.html', randInt = randInt)
+    return render_template('homepage.html')
 
-randInt = random.randint(0, 6)
